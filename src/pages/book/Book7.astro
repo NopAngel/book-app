@@ -1,0 +1,17 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import ViewPage from "../../components/ViewPage.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main transition:name="hero">
+    <Navbar />
+    <ViewPage
+      Title="La Guía del Autoestopista Galáctico"
+      Description="Un viaje absurdo y cómico por el espacio, con toallas."
+      Author="Douglas Adams"
+      ImgPage="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653311117i/6691227.jpg"
+    />
+  </main>
+</Layout>

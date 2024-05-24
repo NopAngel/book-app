@@ -1,0 +1,17 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import ViewPage from "../../components/ViewPage.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main transition:name="hero">
+    <Navbar />
+    <ViewPage
+      Title="El Señor de los Anillos."
+      Description="Una aventura épica en un mundo de fantasía llamado la Tierra Media."
+      Author="J.R.R. Tolkien"
+      ImgPage="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1566425108i/33.jpg"
+    />
+  </main>
+</Layout>

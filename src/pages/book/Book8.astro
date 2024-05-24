@@ -1,0 +1,17 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import ViewPage from "../../components/ViewPage.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main transition:name="hero">
+    <Navbar />
+    <ViewPage
+      Title="Neuromante"
+      Description="Una visión profética de la ciber-realidad y la inteligencia artificial."
+      Author="William Gibson"
+      ImgPage="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1554437249i/6088007.jpg"
+    />
+  </main>
+</Layout>

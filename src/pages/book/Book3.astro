@@ -1,0 +1,17 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import ViewPage from "../../components/ViewPage.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main transition:name="hero">
+    <Navbar />
+    <ViewPage
+      Title="Harry Poter, La Piedra Filosofal"
+      Description="Un niño descubre que es un mago y comienza una aventura en una escuela de magia."
+      Author="J.K. Rowling"
+      ImgPage="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1550337333i/15868.jpg"
+    />
+  </main>
+</Layout>

@@ -1,0 +1,17 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import ViewPage from "../../components/ViewPage.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main transition:name="hero">
+    <Navbar />
+    <ViewPage
+      Title="El resplandor"
+      Description="Una familia se muda a un hotel aislado para el invierno donde una presencia siniestra influye en el padre hacia la violencia."
+      Author="Stephen King"
+      ImgPage="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1641398308i/60038757.jpg"
+    />
+  </main>
+</Layout>

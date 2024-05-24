@@ -1,0 +1,17 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import ViewPage from "../../components/ViewPage.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main transition:name="hero">
+    <Navbar />
+    <ViewPage
+      Title="Apocalipsis Zombie"
+      Description="Un gallego se queda en casa en pleno apocalipsis zombie y acaba casi salvando el mundo"
+      Author="Manel Loreiro"
+      ImgPage="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1422626176i/24762432.jpg"
+    />
+  </main>
+</Layout>

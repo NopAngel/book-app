@@ -1,0 +1,21 @@
+---
+const { ImgPage, Title, Description, Author } = Astro.props;
+---
+
+<article
+  class="flex md:flex-row flex-col justify-center items-center h-[100vh] *:p-[20px]"
+>
+  <section class="p-[20px]">
+    <picture>
+      <img src={ImgPage} class="w-[600px]" alt={Title} />
+    </picture>
+  </section>
+
+  <section class="ml-[20px] max-w-[600px]">
+    <h1 class="text-5xl font-bold">{Title}</h1>
+    <p class="p-[6px] opacity-50 text-xl">{Description}</p>
+    <footer>
+      <p class="opacity-80 text-xl text-center">{Author}</p>
+    </footer>
+  </section>
+</article>

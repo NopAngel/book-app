@@ -1,0 +1,36 @@
+<div class="flex justify-center flex-col text-center mt-[60px]">
+  <h1 class="text-5xl font-bold">
+    Book<span class="text-blue-600 font-extrabold">X</span>
+  </h1>
+  <p class="opacity-50 text-xl p-6">
+    ¡Ve los mejores libros y adentrate en sus historias!
+  </p>
+  <div
+    id="section-cards"
+    class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-[50%] mx-auto mt-[60px] text-wrap"
+  >
+  </div>
+</div>
+<script>
+  import { bookInfo } from "../db/book";
+  for (let i = 0; i <= 13; i++) {
+    document.querySelector("#section-cards").innerHTML += `
+    <article class="w-fit gap-[12px] cursor-pointer bg-neutral-950/55 mb-[20px] flex items-center flex-col m-[20px] rounded-lg" transition:name="hero" id="anim-hero">
+        <a href="${bookInfo.library[i].book.href}">
+            <section class="flex items-center">
+            <img src="${bookInfo.library[i].book.cover}" alt="${bookInfo.library[i].book.title}" width="250px">
+        </section>
+        <section class="p-[6px] text-left">
+            <h1 class="text-xl font-semibold w-[200px] mx-auto">${bookInfo.library[i].book.title}</h1>
+            <p class="text-xs">Genero: ${bookInfo.library[i].book.genre}</p>
+            <p class="text-xs">Páginas: ${bookInfo.library[i].book.pages}</p>
+            <p class="text-xs">Año: ${bookInfo.library[i].book.year}</p>
+        </section>
+        <footer class="text-xs opacity-50 p-[6px]">
+            <p>Creador por: ${bookInfo.library[i].book.author.name}</p>
+        </footer>
+            </a>
+    </article>
+    `;
+  }
+</script>

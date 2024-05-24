@@ -1,0 +1,17 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import ViewPage from "../../components/ViewPage.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main transition:name="hero">
+    <Navbar />
+    <ViewPage
+      Title="Frankenstein"
+      Description="Un científico obsesionado crea una criatura viva a partir de partes de cuerpos robadas, con consecuencias desastrosas."
+      Author="Mary Shelley"
+      ImgPage="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1669159060i/63631742.jpg"
+    />
+  </main>
+</Layout>
